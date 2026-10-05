@@ -1,6 +1,6 @@
 # Tool Learning Log
 
-## Tool: **KAPLAY**
+## Tool: **X**
 
 ## Project: **X**
 
