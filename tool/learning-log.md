@@ -24,6 +24,20 @@ Calculator example:
 ![Prototype website](../assets/image.png)
 * Websites used: [Download](https://mathjs.org/download.html), [Documentation](https://mathjs.org/docs/index.html), [Examples](https://mathjs.org/examples/index.html).
 
+### 11/8/26:
+#### Learning Log #2
+* Today I fixed my code for the calculator to work correctly, make exponents, parantheses multupication work.
+* After tinkering with my tool for a long time, I have found two bugs, the exponents - ^, and multiplication - () didn't work because Javascript didn't recognize them. In order to solve this, I used the .replace method which changes certain characters in the equation, for example it turns 3(5) into 3*(5), and 3^3 turns into 3**3 so that Javascript can correctly calculate it. <br>
+Code:
+```js
+<input id="input" oninput="out.value = eval(value.replace(/(\d)\(/g, '$1*(').replace(/\^/g, '**'))">
+```  
+* Now my basic calculator works correctly, and can intake, and output large amount of values.<br>
+
+Calculator example:
+<br>
+![Fixed Calculator](../assets/large-value.png)
+* Sources used: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace).
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
